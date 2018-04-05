@@ -4,23 +4,24 @@ import os
 os.system('cls||clear')
 
 def drawMan(numLives):
-    hangman =("\n122222222222222\n"
-             +"1            33\n"
-             +"1           3  3\n"
-             +"1            33\n"
-             +"1            3\n"
-             +"1         5  4  5\n"
-             +"1          5 4 5\n"
-             +"1           545\n"
-             +"1            4\n"
-             +"1            4\n"
-             +"1            4\n"
-             +"1           6 6\n"
-             +"1          6   6\n"
-             +"1         6     6\n"
-             +"1\n"
-             +"1\n"
-             +"0000000000000000000\n\n")
+    hangman =("""\n\t\t\t 122222222222222\n
+             1  2         2\n
+             1 2          33\n
+             12          3  3\n
+             1            33\n
+             1            3\n
+             1         5  4  5\n
+             1          5 4 5\n
+             1           545\n
+             1            4\n
+             1            4\n
+             1            4\n
+             1           6 6\n
+             1          6   6\n
+             1         6     6\n
+             1\n
+             1\n
+             0000000000000000000\n\n""")
 
     for char in hangman:
         try:
@@ -84,6 +85,5 @@ if not correct :
     print("\n\nBetter Luck next time")
 else :
     print("\n\n\n\nYou finally got it!!")
-
 
 print("the Word was: " +word)
